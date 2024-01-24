@@ -9,9 +9,13 @@ export const dataSlice = createSlice({
     initialState,
     reducers:{
 createDataFunc:(state,action)=>{
-  state.data = [...state.data,action.payload] // bu kismi chatgpye bi sor ne yapiyo diye
-}
-    
+  state.data = [...state.data,action.payload] 
+},
+getNumberOfData: (state,number) => {
+ number=state.data.length;
+},
+
+
 
 
 }
@@ -19,5 +23,5 @@ createDataFunc:(state,action)=>{
 
 )
 
-export const {createDataFunc} = dataSlice.actions;
+export const {createDataFunc,getNumberOfData} = dataSlice.actions;
 export default dataSlice.reducer

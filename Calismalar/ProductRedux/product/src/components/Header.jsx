@@ -1,14 +1,20 @@
 import React from 'react'
 import { MdLibraryAdd } from "react-icons/md";
-import { useDispatch } from 'react-redux';
+import { useDispatch,useSelector } from 'react-redux';
 import { modalFunc } from '../redux/modalSlice';
+import { getNumberOfData } from '../redux/dataSlice';
 
 const Header = () => {
 
+  
+    const {data} = useSelector(state=>state.data)
     const dispatch = useDispatch();
     const handleClick =()=>{
       dispatch(modalFunc())
     }
+    const number = data.length;
+
+    //const number = dispatch(getNumberOfData())
     
 
     
@@ -16,7 +22,7 @@ const Header = () => {
     <div className='header'> 
         <h2>REACT UYGULAMA</h2>
         <div className='header-right'>
-          <p>Product Sayisi:</p>
+          <p>Product Sayisi:{number}</p>
             <div className='select'>
                 <select name='' id=''>
                     <option value='asc'>Artan</option>
