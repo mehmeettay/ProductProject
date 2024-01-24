@@ -1,0 +1,111 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(50, 50, 226);
+    color: white;
+    padding: 20px;
+}
+
+.header-right{
+    display: flex;
+    gap: 25px;
+}
+
+.select select{
+    height: 40px;
+    font-size: 25px;
+    width: 120px;
+    
+}
+
+.input input{
+    height: 40px;
+    width: 120px;
+    font-size: 15px;
+
+}
+
+.icon {
+    font-size: 24px; /* İkon büyüklüğünü burada belirtin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.popup-overlay {
+    position: fixed; /* Overlay'ın sabit bir konumda olmasını sağlar. */
+    top: 0; /* Overlay'ın üst kısmı sayfanın üstüne hizalanır. */
+    left: 0; /* Overlay'ın sol kısmı sayfanın soluna hizalanır. */
+    width: 100%; /* Overlay'ın genişliği sayfanın genişliğine eşittir. */
+    height: 100%; /* Overlay'ın yüksekliği sayfanın yüksekliğine eşittir. */
+    background: rgba(0, 0, 0, 0.4); /* Overlay'ın arka plan rengi (siyah, %50 saydamlık). */
+    display: flex; /* İçeriği merkeze hizalamak için flex kullanılır. */
+    justify-content: center; /* İçeriği yatayda merkeze hizalar. */
+    align-items: center; /* İçeriği dikeyde merkeze hizalar. */
+  }
+  
+  .popup-content {
+    background: white; /* İçerik bileşeninin arka plan rengi. */
+    padding: 20px; /* İçerik ile iç kısım arasındaki iç boşluğu ayarlar. */
+    border-radius: 8px; /* İçerik bileşeninin kenarlarını yuvarlar. */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* İçerik bileşenine hafif bir gölge ekler. */
+    width: 30%; /* İçerik bileşeninin genişliği, overlay'ın %80'ine eşittir. */
+    max-width: 600px; /* İçerik bileşeninin maksimum genişliği 600 pikseldir. */
+    height: 35%; /* İçerik bileşeninin yüksekliği, overlay'ın %80'ine eşittir. */
+    max-height: 1000px; /* İçerik bileşeninin maksimum yüksekliği 400 pikseldir. */
+    overflow: auto; /* İçerik aştığında kaydırma çubuklarını gösterir. */
+    position: relative; /* İçerik bileşeninin konumunu belirler (ortalamak için kullanılır). */
+    display: flex;
+    flex-direction: column;
+    
+  
+  }
+  .title-close {
+    display: flex;
+    flex-direction: column;
+  }
+  .title-close input {
+    margin-bottom: 10px; /* İki input arasına bir boşluk ekler */
+  }
+
+  .icon-close{
+    font-size: 50px;
+    cursor: pointer;
+    position: fixed;
+    right: 540px;
+  }
+
+  input{
+    height: 30px;
+ 
+  }
+  
+  .window{
+    margin-left: 25px;
+  }
+
+  .resim{
+    display: flex;
+  }
+
+  .product-card img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-right: 10px;
+  }
+
+  .product{
+    display: flex;
+    align-items: center;
+    margin:10px;
+    flex-wrap: wrap;
+
+  }
+
+  .altmetin{
+
+  }
+  
